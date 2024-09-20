@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: nextargo-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels: 
+      app: nextargo-pod
+  template:
+    metadata:
+      labels:
+        app: nextargo-pod 
+    spec: 
+      containers:
+      - name: nextargo-container
+        image: thanak81/nextargo
+        ports:
+        - containerPort: 3000
+  
