@@ -1,7 +1,7 @@
 pipeline{
     stages{
         stage ("Testing"){
-            step{
+            steps{
                 sh "echo hello"
             }
         }
