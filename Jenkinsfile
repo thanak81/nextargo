@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage ("Testing"){
             steps{
-                sh "echo bonjour"
+                sh "echo hola amigo"
             }
         }
     }
